@@ -1,0 +1,156 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>AI Security System</title>
+
+    <style>
+        body {
+            background: #111;
+            color: white;
+            text-align: center;
+            font-family: Arial;
+        }
+
+        img {
+            border: 3px solid white;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .start { background: green; color: white; }
+        .stop { background: red; color: white; }
+
+        #status {
+            margin-top: 15px;
+            font-size: 18px;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🔥 AI Security Dashboard</h1>
+
+<button class="start" onclick="startSystem()">START</button>
+<button class="stop" onclick="stopSystem()">STOP</button>
+
+<div id="status">SYSTEM OFF</div>
+
+<img src="/video" width="720">
+
+<script>
+
+function startSystem(){
+    fetch('/start')
+}
+
+function stopSystem(){
+    fetch('/stop')
+}
+
+setInterval(() => {
+    fetch('/status')
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("status").innerHTML =
+        data.label + " | Confidence: " + data.confidence.toFixed(2)
+    })
+}, 1000);
+
+</script>
+
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi Camera AI Dashboard</title>
+    <style>
+        body { font-family: Arial; background: #111; color: white; }
+        .grid { display: flex; gap: 20px; }
+        .cam { width: 48%; }
+        img { width: 100%; border: 2px solid #0f0; }
+    </style>
+</head>
+<body>
+
+<h1>🔥 Multi Camera AI Monitoring</h1>
+
+<div class="grid">
+
+    <div class="cam">
+        <h3>Camera 0</h3>
+        <img src="/video/0">
+    </div>
+
+    <div class="cam">
+        <h3>Camera 1</h3>
+        <img src="/video/1">
+    </div>
+
+</div>
+
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Security Dashboard</title>
+</head>
+<body>
+
+<h2>🔥 AI Multi-Camera Dashboard</h2>
+
+<a href="/logout">Logout</a>
+
+<div style="display:flex; gap:20px;">
+    <div>
+        <h3>Camera 0</h3>
+        <img src="/video/0" width="500">
+    </div>
+
+    <div>
+        <h3>Camera 1</h3>
+        <img src="/video/1" width="500">
+    </div>
+</div>
+
+</body>
+<!-- </html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Security Dashboard</title>
+</head>
+<body>
+
+<h1>🔥 Industry AI Security System</h1>
+
+<div style="display:flex; gap:20px;">
+
+    <div>
+        <h3>Camera 0</h3>
+        <img src="/video/0" width="400">
+    </div>
+
+    <div>
+        <h3>Camera 1</h3>
+        <img src="/video/1" width="400">
+    </div>
+
+</div>
+
+</body>
+</html> -->
